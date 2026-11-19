@@ -1,0 +1,118 @@
+{
+  "project": "circular-impact-claims",
+  "version": "2026-09-synthetic-v1",
+  "synthetic": true,
+  "tables": [
+    {
+      "name": "devices",
+      "key": "id",
+      "refs": {},
+      "fields": {
+        "id": "资料设备身份",
+        "serial": "可确认实物序列号，未知为空",
+        "kind": "设备类别",
+        "region": "使用地区",
+        "model_age_years": "接收时机龄",
+        "confirmed_same_as": "已确认对应身份，非猜测相似"
+      },
+      "path": "data/devices.jsonl",
+      "rows": 40,
+      "sha256": "a95dcdd2267fa58f6270d039c212fe43d8fafb010200d3a6baceda7f28bb51da"
+    },
+    {
+      "name": "movements",
+      "key": "id",
+      "refs": {
+        "device": "devices"
+      },
+      "fields": {
+        "id": "流转事实",
+        "device": "设备",
+        "kind": "接收维修销售退回或在用",
+        "day": "实际发生日",
+        "known_at": "资料到达时间",
+        "service_hours": "有记录支持的使用小时",
+        "holder": "持有主体"
+      },
+      "path": "data/movements.jsonl",
+      "rows": 160,
+      "sha256": "54c9439ca38a0de4d2dc3f8db6641b5274791ee01df72e116fd14d9147ed40d6"
+    },
+    {
+      "name": "factors",
+      "key": "id",
+      "refs": {},
+      "fields": {
+        "id": "因子身份",
+        "kind": "设备类别",
+        "region": "适用地区",
+        "unit": "单位",
+        "low": "因子支持下界",
+        "high": "因子支持上界",
+        "correlation_group": "共享来源不确定性组",
+        "valid_from": "适用起点",
+        "valid_to": "适用终点不含",
+        "known_at": "获知时间"
+      },
+      "path": "data/factors.jsonl",
+      "rows": 6,
+      "sha256": "a1580cf090f69faad57ec889ad9de8a032fb66c25e6eef6534b0a3b5aa7d40d1"
+    },
+    {
+      "name": "substitution",
+      "key": "id",
+      "refs": {},
+      "fields": {
+        "id": "调查记录",
+        "kind": "设备类别",
+        "region": "使用地区",
+        "would_buy_new": "是否有明确新购替代意向",
+        "observed_service_months": "已观察使用月数",
+        "observation_complete": "该段观察是否完整",
+        "known_at": "到达时间",
+        "fold": "独立核对范围"
+      },
+      "path": "data/substitution.jsonl",
+      "rows": 160,
+      "sha256": "198bac0d24115a638a89ad9cf5002d3fe809389bbe8ca863ddcc7f02cfe20a42"
+    },
+    {
+      "name": "burdens",
+      "key": "id",
+      "refs": {
+        "device": "devices"
+      },
+      "fields": {
+        "id": "负担身份",
+        "device": "对应实物",
+        "kind": "维修运输或使用负担",
+        "kgco2e_low": "已发生负担下界",
+        "kgco2e_high": "已发生负担上界",
+        "occurred_at": "实际时点",
+        "known_at": "获知时点"
+      },
+      "path": "data/burdens.jsonl",
+      "rows": 40,
+      "sha256": "414263db87374dc0f6b7edd4e5b0e7c2c29ce01911ea782efb3b1ce22eae81e6"
+    },
+    {
+      "name": "applications",
+      "key": "id",
+      "refs": {
+        "device": "devices"
+      },
+      "fields": {
+        "id": "引用申请",
+        "applicant": "申请主体",
+        "device": "设备",
+        "service_from": "拟引用服务起日",
+        "service_to": "拟引用服务止日",
+        "mode": "exclusive独占认领或joint共同披露",
+        "known_at": "提交时点"
+      },
+      "path": "data/applications.jsonl",
+      "rows": 50,
+      "sha256": "4f388f676cff8fe1e72ea5dbe72877988686f9a27c7ea8c445e1309aa66be0d5"
+    }
+  ]
+}
