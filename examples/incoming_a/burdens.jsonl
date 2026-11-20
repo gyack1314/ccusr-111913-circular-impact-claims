@@ -1,0 +1,2 @@
+{"id":"B41","device":"D041","kind":"repair_transport","kgco2e_low":6,"kgco2e_high":11,"occurred_at":"2026-10-02T09:00:00+08:00","known_at":"2026-10-04T09:00:00+08:00"}
+{"id":"B5-extra","device":"D005","kind":"repair_transport","kgco2e_low":3,"kgco2e_high":5,"occurred_at":"2026-10-08T09:00:00+08:00","known_at":"2026-10-09T09:00:00+08:00"}

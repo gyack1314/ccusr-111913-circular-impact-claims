@@ -1,0 +1,3 @@
+{"id":"M41-0","device":"D041","kind":"received","day":"2026-09-25","known_at":"2026-09-26T09:00:00+08:00","service_hours":0,"holder":"O2"}
+{"id":"M41-1","device":"D041","kind":"refurbished","day":"2026-10-02","known_at":"2026-10-03T09:00:00+08:00","service_hours":0,"holder":"O2"}
+{"id":"M5-RET","device":"D005","kind":"returned","day":"2026-10-08","known_at":"2026-10-09T09:00:00+08:00","service_hours":0,"holder":"O3"}

@@ -1,0 +1,2 @@
+{"id":"Faircon-1-r2","kind":"aircon","region":"R1","unit":"kgco2e_per_service_year","low":160,"high":235.0,"correlation_group":"manufacturing-aircon","valid_from":"2027-01-01","valid_to":"2028-01-01","known_at":"2026-10-05T09:00:00+08:00"}
+{"id":"Ffridge-0-r2","kind":"fridge","region":"R0","unit":"kgco2e_per_service_year","low":128,"high":190.0,"correlation_group":"manufacturing-fridge","valid_from":"2027-01-01","valid_to":"2028-01-01","known_at":"2026-10-05T09:00:00+08:00"}

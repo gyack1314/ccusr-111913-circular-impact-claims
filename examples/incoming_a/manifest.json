@@ -1,0 +1,42 @@
+{
+  "project": "circular-impact-claims",
+  "version": "incoming-a-synthetic-v1",
+  "synthetic": true,
+  "tables": [
+    {
+      "name": "devices",
+      "key": "id",
+      "path": "devices.jsonl",
+      "rows": 1,
+      "sha256": "5ed155bf473bbf55f67c6ae7b4e4860eb07babdba5ba659ea3347eb9a774d062"
+    },
+    {
+      "name": "factors",
+      "key": "id",
+      "path": "factors.jsonl",
+      "rows": 2,
+      "sha256": "5e89f4f88760e6d7db203a4408a774d643cb83cd5bca698e6d4ce44587875b1d"
+    },
+    {
+      "name": "movements",
+      "key": "id",
+      "path": "movements.jsonl",
+      "rows": 3,
+      "sha256": "86bbe25f8363b95d248d048306f7cf5807176d886d94b78375eaef5f5e7fd499"
+    },
+    {
+      "name": "burdens",
+      "key": "id",
+      "path": "burdens.jsonl",
+      "rows": 2,
+      "sha256": "638960486f3de5627f06d4428a1eb693ea87e6959c54b33f15bb884bc052d9aa"
+    },
+    {
+      "name": "applications",
+      "key": "id",
+      "path": "applications.jsonl",
+      "rows": 1,
+      "sha256": "5de21b0a1b75dc33f580785d070d8484169fdd8cde49c8c885af3aebb4a8beab"
+    }
+  ]
+}
